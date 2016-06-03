@@ -1,9 +1,9 @@
-#include<bits/stdc++>
+#include<bits/stdc++.h>
 double halton (int index, int base);
 int main(int ac, char** av)
 {
     int base = 2; 
-    printf("| idx | halton seq |\n");
+    printf("| halton seq |\n");
     printf("|---: | :--------: |\n");
     for (int index = 1; index <= 20; ++index ) {
         printf("| %3d | %10.8f |\n", index, halton( index, base ) );
