@@ -1,5 +1,6 @@
 #include<iostream>
-#include<cstdio>
+#include<cstdio> 
+using namespace std;
 double halton (int index, int base)
 {
     double frac = 1.0 / (double)base;
@@ -15,11 +16,11 @@ double halton (int index, int base)
 int main()
 {
     int base = 2; 
-    printf("| halton seq |\n");
-    printf("|---: | :--------: |\n");
-    for (int index = 1; index <= 20; ++index ) 
+    cout<<"| halton seq |"<<endl;
+    cout<<"|--------|"<<endl;
+    for (int i = 1; i <= 20; ++i ) 
     {
-        printf("| %3d | %10.8f |\n", index, halton( index, base ) );
+        cout<<i<<"   "<< halton( i, base )<<endl;
     }
     return 0;
 }
