@@ -1,4 +1,5 @@
-#include<bits/stdc++.h>
+#include<iostream>
+#include<cstdio>
 double halton (int index, int base)
 {
     double frac = 1.0 / (double)base;
@@ -11,7 +12,7 @@ double halton (int index, int base)
     }
     return result;
 }
-int main(int ac, char** av)
+int main()
 {
     int base = 2; 
     printf("| halton seq |\n");
